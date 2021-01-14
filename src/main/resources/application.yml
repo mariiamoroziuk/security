@@ -1,0 +1,17 @@
+server:
+  port: 5000
+---
+spring:
+  datasource:
+    password: secret
+    url: jdbc:postgresql://localhost:5432/postgres
+    username: postgres
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+---
+jwt:
+  secret: proselyte
+  expiration: 604800
+  header: Authorization
